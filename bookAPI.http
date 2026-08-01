@@ -1,0 +1,83 @@
+//Tạo author mới
+POST http://localhost:3001/api/authors/create
+Content-Type: application/json
+
+{
+  "name": " Oliver",
+  "bio": "Ông được mệnh danh là người sáng lập ra Khoa học thành công.",
+  "nationality": "American",
+  "birthYear": 1883
+}
+
+###
+// Tạo book mới
+POST http://localhost:3001/api/books/create
+Content-Type: application/json
+
+{
+  "title": "Think And Grow Rich",
+  "description": "Cuốn sách sẽ giúp bạn trở nên giàu có, làm giàu cho cuộc sống của bạn trên tất cả các phương diện của cuộc sống chứ không chỉ về tài chính và vật chất.",
+  "price": 111,
+  "publishedYear": 1937,
+    "genre": "Business",
+  "author": "6a6b826183e9f2d856771283"
+  }
+###
+// lấy tất cả các book
+GET http://localhost:3001/api/books
+Content-Type: application/json
+###
+//lấy all author
+GET http://localhost:3001/api/authors
+Content-Type: application/json
+###
+//Get chi tiết author
+GET http://localhost:3001/api/authors/6a6b79a683e9f2d85677127f
+Content-Type: application/json
+###
+//Get chi tiết book
+GET http://localhost:3001/api/books/6a6b7a8283e9f2d856771282
+Content-Type: application/json
+###
+#Update book
+PUT http://localhost:3001/api/books/6a6b7a8283e9f2d856771282
+Content-Type: application/json
+
+{
+
+  "title": "Think And Grow Rich",
+  "description": "Cuốn sách sẽ giúp bạn trở nên giàu có, làm giàu cho cuộc sống của bạn trên tất cả các phương diện của cuộc sống chứ không chỉ về tài chính và vật chất.",
+  "price": 130,
+  "publishedYear": 1937,
+    "genre": "Skills",
+  "author": "6a6b79a683e9f2d85677127f"
+}
+
+###
+#Update author
+PUT http://localhost:3001/api/authors/6a6b79a683e9f2d85677127f
+Content-Type: application/json
+
+{
+  "name": " Oliver Napoleon Hill",
+  "bio": "Ông được mệnh danh là người sáng lập ra Khoa học thành công.",
+  "nationality": "Mễ",
+  "birthYear": 1883
+
+}
+
+###
+#Kiểm tra Search
+GET http://localhost:3001/api/books?search=Think And Grow Rich
+Content-Type: application/json
+###
+//Delete book
+DELETE http://localhost:3001/api/books/6a6b82be83e9f2d856771285
+Content-Type: application/json
+###
+//Delete author
+DELETE http://localhost:3001/api/authors/6a6b826183e9f2d856771283
+Content-Type: application/json
+
+
+
