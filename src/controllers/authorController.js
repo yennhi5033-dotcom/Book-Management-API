@@ -1,5 +1,5 @@
 import * as authorService from '../services/authorService.js';
-
+// xử lý phản hồi( số stauts , dữ liệu trả về, thông báo lỗi message)
 export const createAuthor = async (req, res) => {
   try {
     const author = await authorService.createAuthor(req.body);

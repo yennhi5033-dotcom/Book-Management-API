@@ -6,3 +6,4 @@ export const getAuthorById = (id) => Author.findById(id);
 export const deleteAuthor = (id) => Author.findByIdAndDelete(id);
 export const updateAuthor = (id, data) => Author.findByIdAndUpdate(id, data, { new: true });
 
+// xử lý dữ liệu  và kết nối db 
