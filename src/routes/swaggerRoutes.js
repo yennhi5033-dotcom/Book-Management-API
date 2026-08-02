@@ -1,6 +1,9 @@
 import express from 'express';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const router = express.Router();
+
 
 const swaggerSpec = {
   openapi: '3.0.3',
@@ -12,7 +15,7 @@ const swaggerSpec = {
   },
   servers: [
     {
-      url: 'http://localhost:3001',
+      url: process.env.API_URL,
       description: 'Local development server',
     },
   ],
