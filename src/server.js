@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import connectDB from './config/db.js';
 import bookRoutes from './routes/bookRoutes.js';
 import authorRoutes from './routes/authorRoutes.js';
+import swaggerRoutes from './routes/swaggerRoutes.js';
 
 
 
@@ -14,6 +15,7 @@ connectDB();
 
 app.use('/api/books', bookRoutes);
 app.use('/api/authors', authorRoutes);
+app.use('/swagger', swaggerRoutes);
 
 
 const PORT = process.env.PORT || 3001;

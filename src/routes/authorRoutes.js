@@ -6,5 +6,5 @@
     router.get('/:id', getAuthorDetail);
     router.put('/:id', updateAuthor);
     router.delete('/:id', deleteAuthor);   
-    
+    // xác thực phương thức và đường dẫn.
     export default router;
