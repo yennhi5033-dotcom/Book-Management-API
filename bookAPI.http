@@ -3,10 +3,10 @@ POST http://localhost:3001/api/authors/create
 Content-Type: application/json
 
 {
-  "name": " Le Anh",
+  "name": " LAN Anh",
   "bio": "DEP.",
   "nationality": "Vietnamese",
-  "birthYear": 1996
+  "birthYear": 1999
 }
 
 ###
