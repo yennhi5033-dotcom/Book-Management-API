@@ -3,10 +3,10 @@ POST http://localhost:3001/api/authors/create
 Content-Type: application/json
 
 {
-  "name": " Oliver",
-  "bio": "Ông được mệnh danh là người sáng lập ra Khoa học thành công.",
-  "nationality": "American",
-  "birthYear": 1883
+  "name": " Le Anh",
+  "bio": "DEP.",
+  "nationality": "Vietnamese",
+  "birthYear": 1996
 }
 
 ###
